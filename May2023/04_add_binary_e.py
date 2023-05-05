@@ -24,3 +24,6 @@ class Solution:
         for i in range(len(f)):
             o=f[i]+(o*10)
         return str(o)
+
+# https://leetcode.com/problems/add-binary
+# easy
