@@ -3,7 +3,7 @@ class Solution
         e=len(digits)-1
         a=digits[0]
         for i in range(e)
-            a=a10+digits[i+1]
+            a=a*10+digits[i+1]
         a=a+1
         b=str(a)
         c=[]
