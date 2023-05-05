@@ -10,3 +10,6 @@ class Solution
         for i in range(len(b))
             c.append(int(b[i]))
         return c
+
+# https://leetcode.com/problems/plus-one/
+# easy
