@@ -21,3 +21,6 @@ class Solution:
             current_node.next = ListNode(val)
             current_node = current_node.next
         return head1
+        
+# https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+# easy
