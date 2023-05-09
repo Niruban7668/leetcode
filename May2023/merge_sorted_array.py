@@ -13,3 +13,6 @@ class Solution:
                     j+=1
 
         nums1.sort()
+        
+# https://leetcode.com/problems/merge-sorted-array/description/
+# easy
