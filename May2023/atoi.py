@@ -18,3 +18,6 @@ class Solution:
         result = max(-2**31, min(result, 2**31 - 1))
         
         return result
+    
+#https://leetcode.com/problems/string-to-integer-atoi/
+#medium
