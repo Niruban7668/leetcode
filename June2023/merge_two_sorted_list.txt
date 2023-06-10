@@ -1,0 +1,29 @@
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def convertArr(self,head):
+        arr=[]
+        curr=head
+        while curr is not None:
+            arr.append(curr.val)
+            curr=curr.next
+        return arr
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        arr1=self.convertArr(list1)
+        arr2=self.convertArr(list2)
+        if not arr1 and not arr2:
+            return list1
+        arr3=arr1+arr2
+        arr3=sorted(arr3)
+        head1=ListNode(arr3[0])
+        current_node=head1
+        for i in arr3[1:]:
+            current_node.next=ListNode(i)
+            current_node=current_node.next
+        return head1
+
+#https://leetcode.com/problems/merge-two-sorted-lists/submissions/968319058/
+#easy
